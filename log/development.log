@@ -9647,3 +9647,505 @@ Processing by PagesController#index as HTML
 Completed 200 OK in 80ms (Views: 78.6ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/posts/6" for 127.0.0.1 at 2017-11-05 17:35:50 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 368ms (Views: 338.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/posts/6" for 127.0.0.1 at 2017-11-05 17:35:58 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 95ms (Views: 92.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/6" for 127.0.0.1 at 2017-11-05 17:36:05 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 92ms (Views: 90.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/6" for 127.0.0.1 at 2017-11-05 17:36:07 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 100ms (Views: 98.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-05 17:43:08 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered pages/index.html.erb within layouts/application (9.7ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 83ms (Views: 81.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2017-11-05 17:43:12 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mPostcomment Load (0.2ms)[0m  [1m[34mSELECT "postcomments".* FROM "postcomments"[0m
+  Rendered /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb (112.8ms)
+Completed 200 OK in 127ms (Views: 113.9ms | ActiveRecord: 1.6ms)
+
+
+Started DELETE "/admin/users/1" for 127.0.0.1 at 2017-11-05 17:43:25 +0200
+Processing by Admin::UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Yn/9HCppHf3C4OYP2ung+rueL83eQ9A1ZLB8ad6UknHMVE9MIAE/XFjF3sb9Es6O7nblNDnt8DuKT31kektJIA==", "id"=>"1"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  [1m[35m (153.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin/users
+Completed 302 Found in 177ms (ActiveRecord: 154.6ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2017-11-05 17:43:25 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mPostcomment Load (0.1ms)[0m  [1m[34mSELECT "postcomments".* FROM "postcomments"[0m
+  Rendered /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb (103.0ms)
+Completed 200 OK in 108ms (Views: 104.8ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/admin/users/2" for 127.0.0.1 at 2017-11-05 17:43:31 +0200
+Processing by Admin::UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"AOqPzDys3UkJ5LIRFvgPmymNO079/G3ITr/wvzcH0CCuwT2cNsT/6JPBitgxAyHvfGXxtxpSTcagQPGyk9gLcQ==", "id"=>"2"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  [1m[35m (209.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin/users
+Completed 302 Found in 220ms (ActiveRecord: 210.1ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2017-11-05 17:43:31 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mPostcomment Load (0.1ms)[0m  [1m[34mSELECT "postcomments".* FROM "postcomments"[0m
+  Rendered /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb (93.7ms)
+Completed 200 OK in 102ms (Views: 95.0ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/admin/users/3" for 127.0.0.1 at 2017-11-05 17:43:35 +0200
+Processing by Admin::UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iEeP9iF2skVOmtZWQrXSyzzdNcFrPr4nH7Kla9/8tyQmbD2mKx6Q5NS/7p9lTvy/aTX/OIyQninxTaRmeyNsdQ==", "id"=>"3"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 3]]
+  [1m[35m (160.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin/users
+Completed 302 Found in 180ms (ActiveRecord: 160.8ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2017-11-05 17:43:35 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mPostcomment Load (0.1ms)[0m  [1m[34mSELECT "postcomments".* FROM "postcomments"[0m
+  Rendered /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb (111.9ms)
+Completed 200 OK in 122ms (Views: 116.2ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/admin/users/5" for 127.0.0.1 at 2017-11-05 17:43:46 +0200
+Processing by Admin::UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OIjg7KibF1V47aDEBipgrQkW9l4s2tuh63iGiZFc+y2Wo1K8ovM19OLImA0h0U7ZXP48p8t0+68Fh4eENYMgfA==", "id"=>"5"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 5]]
+  [1m[35m (161.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin/users
+Completed 302 Found in 177ms (ActiveRecord: 161.6ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2017-11-05 17:43:46 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mPostcomment Load (0.1ms)[0m  [1m[34mSELECT "postcomments".* FROM "postcomments"[0m
+  Rendered /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb (99.7ms)
+Completed 200 OK in 106ms (Views: 102.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/users/6" for 127.0.0.1 at 2017-11-05 17:44:01 +0200
+Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/show.html.arb
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = 6 AND "active_admin_comments"."namespace" = ?[0m  [["resource_type", "User"], ["namespace", "admin"]]
+  [1m[36mActiveAdmin::Comment Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = 6 AND "active_admin_comments"."namespace" = ? LIMIT ? OFFSET ?[0m  [["resource_type", "User"], ["namespace", "admin"], ["LIMIT", 1], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = 6 AND "active_admin_comments"."namespace" = ? ORDER BY created_at ASC LIMIT ? OFFSET ?) subquery_for_count[0m  [["resource_type", "User"], ["namespace", "admin"], ["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/show.html.arb (137.8ms)
+Completed 200 OK in 757ms (Views: 754.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/users/6/edit" for 127.0.0.1 at 2017-11-05 17:44:12 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/edit.html.arb
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/edit.html.arb (83.3ms)
+Completed 200 OK in 86ms (Views: 84.7ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/admin/users/6" for 127.0.0.1 at 2017-11-05 17:44:29 +0200
+Processing by Admin::UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uxmvIhdXLg+I57J8QfLFA7XgOhoGYE1XFxZ4D/8Q60QVMh1yHT8MrhLCirVmCet34Ajw4+HObVn56XkCW88wFQ==", "user"=>{"email"=>"yurakosteleba@gmail.com", "encrypted_password"=>"[FILTERED]", "reset_password_token"=>"[FILTERED]", "reset_password_sent_at(1i)"=>"[FILTERED]", "reset_password_sent_at(2i)"=>"[FILTERED]", "reset_password_sent_at(3i)"=>"[FILTERED]", "reset_password_sent_at(4i)"=>"[FILTERED]", "reset_password_sent_at(5i)"=>"[FILTERED]", "remember_created_at(1i)"=>"2017", "remember_created_at(2i)"=>"11", "remember_created_at(3i)"=>"5", "remember_created_at(4i)"=>"14", "remember_created_at(5i)"=>"00", "current_sign_in_at(1i)"=>"2017", "current_sign_in_at(2i)"=>"11", "current_sign_in_at(3i)"=>"5", "current_sign_in_at(4i)"=>"14", "current_sign_in_at(5i)"=>"00", "last_sign_in_at(1i)"=>"2017", "last_sign_in_at(2i)"=>"11", "last_sign_in_at(3i)"=>"5", "last_sign_in_at(4i)"=>"12", "last_sign_in_at(5i)"=>"42", "current_sign_in_ip"=>"127.0.0.1", "last_sign_in_ip"=>"127.0.0.1", "nickname"=>"Missaki"}, "commit"=>"Update User", "id"=>"6"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Unpermitted parameters: :email, :encrypted_password, :reset_password_token, :reset_password_sent_at(1i), :reset_password_sent_at(2i), :reset_password_sent_at(3i), :reset_password_sent_at(4i), :reset_password_sent_at(5i), :remember_created_at(1i), :remember_created_at(2i), :remember_created_at(3i), :remember_created_at(4i), :remember_created_at(5i), :current_sign_in_at(1i), :current_sign_in_at(2i), :current_sign_in_at(3i), :current_sign_in_at(4i), :current_sign_in_at(5i), :last_sign_in_at(1i), :last_sign_in_at(2i), :last_sign_in_at(3i), :last_sign_in_at(4i), :last_sign_in_at(5i), :current_sign_in_ip, :last_sign_in_ip
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "nickname" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["nickname", "Missaki"], ["updated_at", "2017-11-05 15:44:29.493919"], ["id", 6]]
+  [1m[35m (190.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin/users/6
+Completed 302 Found in 219ms (ActiveRecord: 190.9ms)
+
+
+Started GET "/admin/users/6" for 127.0.0.1 at 2017-11-05 17:44:29 +0200
+Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/show.html.arb
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = 6 AND "active_admin_comments"."namespace" = ?[0m  [["resource_type", "User"], ["namespace", "admin"]]
+  [1m[36mActiveAdmin::Comment Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = 6 AND "active_admin_comments"."namespace" = ? LIMIT ? OFFSET ?[0m  [["resource_type", "User"], ["namespace", "admin"], ["LIMIT", 1], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = 6 AND "active_admin_comments"."namespace" = ? ORDER BY created_at ASC LIMIT ? OFFSET ?) subquery_for_count[0m  [["resource_type", "User"], ["namespace", "admin"], ["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/show.html.arb (74.3ms)
+Completed 200 OK in 82ms (Views: 77.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-11-05 17:44:33 +0200
+Processing by Admin::PostsController#index as HTML
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "posts" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "posts" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "posts" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mPostcomment Load (0.2ms)[0m  [1m[34mSELECT "postcomments".* FROM "postcomments"[0m
+  Rendered /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb (80.8ms)
+Completed 200 OK in 85ms (Views: 81.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/users/8" for 127.0.0.1 at 2017-11-05 17:44:37 +0200
+Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/show.html.arb
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = 8 AND "active_admin_comments"."namespace" = ?[0m  [["resource_type", "User"], ["namespace", "admin"]]
+  [1m[36mActiveAdmin::Comment Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = 8 AND "active_admin_comments"."namespace" = ? LIMIT ? OFFSET ?[0m  [["resource_type", "User"], ["namespace", "admin"], ["LIMIT", 1], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = 8 AND "active_admin_comments"."namespace" = ? ORDER BY created_at ASC LIMIT ? OFFSET ?) subquery_for_count[0m  [["resource_type", "User"], ["namespace", "admin"], ["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/show.html.arb (69.8ms)
+Completed 200 OK in 73ms (Views: 71.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2017-11-05 17:44:39 +0200
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/page/index.html.arb
+  Rendered /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/page/index.html.arb (70.2ms)
+Completed 200 OK in 76ms (Views: 73.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at 2017-11-05 17:44:41 +0200
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "admin_users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" ORDER BY "admin_users"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb (108.8ms)
+Completed 200 OK in 113ms (Views: 110.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/admin_users/1" for 127.0.0.1 at 2017-11-05 17:45:08 +0200
+Processing by Admin::AdminUsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/show.html.arb
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = 1 AND "active_admin_comments"."namespace" = ?[0m  [["resource_type", "AdminUser"], ["namespace", "admin"]]
+  [1m[36mActiveAdmin::Comment Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = 1 AND "active_admin_comments"."namespace" = ? LIMIT ? OFFSET ?[0m  [["resource_type", "AdminUser"], ["namespace", "admin"], ["LIMIT", 1], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = 1 AND "active_admin_comments"."namespace" = ? ORDER BY created_at ASC LIMIT ? OFFSET ?) subquery_for_count[0m  [["resource_type", "AdminUser"], ["namespace", "admin"], ["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/show.html.arb (75.7ms)
+Completed 200 OK in 81ms (Views: 77.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/admin_users/1/edit" for 127.0.0.1 at 2017-11-05 17:45:13 +0200
+Processing by Admin::AdminUsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAdminUser Load (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/edit.html.arb
+  [1m[36mCACHE AdminUser Load (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/edit.html.arb (62.6ms)
+Completed 200 OK in 66ms (Views: 64.1ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/admin/admin_users/1" for 127.0.0.1 at 2017-11-05 17:45:33 +0200
+Processing by Admin::AdminUsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/qg+CfMMBnSMWo5LIzIqDp61KI+kivduP6HLwIQqBftQg4xZ+WQk1RZ/toIEyQR6y13idkMk12DRXsrNIPXeqg==", "admin_user"=>{"email"=>"yurakosteleba@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update Admin user", "id"=>"1"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAdminUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "admin_users" WHERE "admin_users"."email" = ? AND ("admin_users"."id" != ?) LIMIT ?[0m  [["email", "yurakosteleba@gmail.com"], ["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "admin_users" SET "email" = ?, "encrypted_password" = ?, "updated_at" = ? WHERE "admin_users"."id" = ?[0m  [["email", "yurakosteleba@gmail.com"], ["encrypted_password", "$2a$11$2iKec.pvQjpqlfknDN.O4O1ytT6gZVyqtr4o5bQhR02lNNezdsH3m"], ["updated_at", "2017-11-05 15:45:33.388177"], ["id", 1]]
+  [1m[35m (100.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin/admin_users/1
+Completed 302 Found in 254ms (ActiveRecord: 101.1ms)
+
+
+Started GET "/admin/admin_users/1" for 127.0.0.1 at 2017-11-05 17:45:33 +0200
+Processing by Admin::AdminUsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE AdminUser Load (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2017-11-05 17:45:33 +0200
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendering /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/devise/shared/_links.erb (0.7ms)
+  Rendered /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (18.3ms)
+Completed 200 OK in 68ms (Views: 66.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2017-11-05 17:45:38 +0200
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UMXSDorTuP8HNRDqLyFmFKQnHpC/EzzRhQHJGuVa/SH+7mBegLuaXp0QKCMI2khg8c/UaVi9HN9r/sgXQYUmcA==", "admin_user"=>{"email"=>"yurakosteleba@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "yurakosteleba@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "admin_users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "updated_at" = ? WHERE "admin_users"."id" = ?[0m  [["sign_in_count", 6], ["current_sign_in_at", "2017-11-05 15:45:38.205505"], ["last_sign_in_at", "2017-11-05 14:36:58.535134"], ["updated_at", "2017-11-05 15:45:38.205911"], ["id", 1]]
+  [1m[35m (108.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin/admin_users/1
+Completed 302 Found in 245ms (ActiveRecord: 109.3ms)
+
+
+Started GET "/admin/admin_users/1" for 127.0.0.1 at 2017-11-05 17:45:38 +0200
+Processing by Admin::AdminUsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/show.html.arb
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = 1 AND "active_admin_comments"."namespace" = ?[0m  [["resource_type", "AdminUser"], ["namespace", "admin"]]
+  [1m[36mActiveAdmin::Comment Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = 1 AND "active_admin_comments"."namespace" = ? LIMIT ? OFFSET ?[0m  [["resource_type", "AdminUser"], ["namespace", "admin"], ["LIMIT", 1], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = 1 AND "active_admin_comments"."namespace" = ? ORDER BY created_at ASC LIMIT ? OFFSET ?) subquery_for_count[0m  [["resource_type", "AdminUser"], ["namespace", "admin"], ["LIMIT", 25], ["OFFSET", 0]]
+  Rendered /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/show.html.arb (75.4ms)
+Completed 200 OK in 79ms (Views: 76.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at 2017-11-05 17:45:44 +0200
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "admin_users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" ORDER BY "admin_users"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb (72.0ms)
+Completed 200 OK in 77ms (Views: 74.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2017-11-05 17:45:47 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mPostcomment Load (0.1ms)[0m  [1m[34mSELECT "postcomments".* FROM "postcomments"[0m
+  Rendered /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb (94.3ms)
+Completed 200 OK in 99ms (Views: 95.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at 2017-11-05 17:45:50 +0200
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "admin_users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mAdminUser Load (0.1ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" ORDER BY "admin_users"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb (81.0ms)
+Completed 200 OK in 85ms (Views: 82.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-05 17:47:15 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered pages/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 85ms (Views: 83.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-11-05 17:47:27 +0200
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/page/index.html.arb
+  Rendered /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/page/index.html.arb (61.4ms)
+Completed 200 OK in 64ms (Views: 62.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/logout" for 127.0.0.1 at 2017-11-05 17:47:30 +0200
+Processing by ActiveAdmin::Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Rb3TnJAbsEJSwuhve8VILH28Bs7khRYUUHSbwQQqmzri0srNd/Qdm8PvR/m50cGqzkarPA9j+HP3ZfL4jSBy+w=="}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "admin_users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "admin_users"."id" = ?[0m  [["remember_created_at", nil], ["updated_at", "2017-11-05 15:47:30.256668"], ["id", 1]]
+  [1m[35m (173.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 184ms (ActiveRecord: 175.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-11-05 17:47:30 +0200
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2017-11-05 17:47:30 +0200
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendering /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/devise/shared/_links.erb (0.7ms)
+  Rendered /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (11.5ms)
+Completed 200 OK in 65ms (Views: 63.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2017-11-05 17:47:33 +0200
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/U1LnXODjU9nIefOUcuZjVpzo/ST3oq79hY1jHaOCuBROiv0rNtSmUnKXBMCiiqyfw1ei7bfIzpgh6323AESAA==", "admin_user"=>{"email"=>"admin@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "admin@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.4ms)
+
+
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/U1LnXODjU9nIefOUcuZjVpzo/ST3oq79hY1jHaOCuBROiv0rNtSmUnKXBMCiiqyfw1ei7bfIzpgh6323AESAA==", "admin_user"=>{"email"=>"admin@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Login"}
+  Rendering /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/devise/shared/_links.erb (0.7ms)
+  Rendered /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (10.2ms)
+Completed 200 OK in 172ms (Views: 57.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2017-11-05 17:47:50 +0200
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6arfIpExAVFcHlSvQiQVfYnAzUQHAbrRV/LBcpLe1BtF3b9LTmneh3L173IRZaZCrL4wOyIAE1DBY1kIOFHM+w==", "admin_user"=>{"email"=>"yurakosteleba@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "yurakosteleba@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "admin_users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "admin_users"."id" = ?[0m  [["remember_created_at", "2017-11-05 15:47:50.267029"], ["updated_at", "2017-11-05 15:47:50.267534"], ["id", 1]]
+  [1m[35m (110.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "admin_users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "updated_at" = ? WHERE "admin_users"."id" = ?[0m  [["sign_in_count", 7], ["current_sign_in_at", "2017-11-05 15:47:50.380975"], ["last_sign_in_at", "2017-11-05 15:45:38.205505"], ["updated_at", "2017-11-05 15:47:50.382133"], ["id", 1]]
+  [1m[35m (49.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 304ms (ActiveRecord: 161.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-11-05 17:47:50 +0200
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/page/index.html.arb
+  Rendered /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/page/index.html.arb (61.6ms)
+Completed 200 OK in 64ms (Views: 62.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-11-05 17:47:52 +0200
+Processing by Admin::PostsController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "posts" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "posts" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "posts" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mPostcomment Load (0.1ms)[0m  [1m[34mSELECT "postcomments".* FROM "postcomments"[0m
+  Rendered /home/akki/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb (78.5ms)
+Completed 200 OK in 84ms (Views: 81.1ms | ActiveRecord: 0.9ms)
+
+
