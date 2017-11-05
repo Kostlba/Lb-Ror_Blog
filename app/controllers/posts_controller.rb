@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
 before_action :authenticate_user!
-before_action :set_post, only: [:show, :edit, :update, :destroy]
+before_action :set_post, only: [:edit, :update, :destroy, :show]
+
 
 def show
 end
@@ -8,7 +9,6 @@ end
 def new
 @post = Post.new
 end
-
 
 def create
 @post = current_user.posts.build(post_params)
@@ -32,8 +32,9 @@ end
 
 
 def destroy
-   @post.destroy
-   redirect_to root_path
+@post.destroy
+redirect_to root_path
+
 end
 
 
